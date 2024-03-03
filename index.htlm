@@ -1,2 +1,53 @@
-# nuevo-2
-Prueba #2 de pagina wed
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a mi Página Web</h1>
+    <p>¡Gracias por visitar! ¿Cómo puedo ayudarte hoy?</p>
+
+    <!-- Botones de Saludo -->
+    <button onclick="saludar('Hola')">Saludar en Español</button>
+    <button onclick="saludar('Hello')">Greet in English</button>
+
+    <script>
+        function saludar(mensaje) {
+            alert(mensaje + ', ¡bienvenido!');
+        }
+    </script>
+</body>
+</html>
